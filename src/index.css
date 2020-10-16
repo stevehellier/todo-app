@@ -40,12 +40,14 @@ button {
   cursor: pointer;
   margin: 10px auto;
   color: white;
+  font-weight: bold;
 }
 
 button:disabled {
   background-color:rgb(50, 50, 104);
   cursor: not-allowed;
   color: darkgrey;
+  font-weight: normal;
 }
 
 .done {
