@@ -1,13 +1,118 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 250px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  padding: 11px 15px;
+  display: block;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 1em;
+  margin: 0.5em auto;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+input:focus {
+  transform: translate(0, 0);
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.09);
+}
+
+button {
+  background-color: midnightblue;
+  display: inline-block;
+  width: 60%;
+  padding: 11px 15px;
+  font-size: 14px;
+  border: 4px double gray;
+  border-radius: 8px;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px auto;
+  color: white;
+}
+
+button:disabled {
+  background-color:rgb(50, 50, 104);
+  cursor: not-allowed;
+  color: darkgrey;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.todo-card {
+  border: 2px solid gray;
+  border-radius: 8px;
+  margin: 5px;
+  width: 100%;
+}
+
+.todo-card-header {
+  border: 2px;
+  border-radius: 6px 6px 0px 0px;
+  padding: 0.2rem;
+  /* background-color: antiquewhite; */
+  color: black;
+  font-size: 18px;
+}
+
+.todo-card-header span {
+  color: green;
+  padding: 0.1rem;
+  margin: 1px;
+  float: right;
+}
+
+.check {
+  color: #3aba6f;
+  text-shadow: 0px 5px 10px rgba(58, 186, 111, 0.3);
+}
+.x {
+  color: rgb(240, 90, 92);
+  text-shadow: 0px 5px 10px rgba(240m90, 92, 0.3);
+}
+
+.todo-card-content {
+  /* border: 2px; */
+  padding: 0.2rem;
+  color: black;
+  font-size: 24px;
+  word-wrap: break-word;
+}
+
+.todo-card-footer {
+  border-top: 1px solid black;
+  padding: 0.2rem;
+  border-radius: 0px 0px 6px 6px;
+  background-color: goldenrod;
+  /* font-size: 12px; */
+  font-size: 0.6rem;
+}
+
+.todo-card-footer span {
+  color: black;
+  padding: 0.1rem;
+  margin: 1px;
+}
+
+.todo-card-footer span.priority {
+  float: right;
+}
+
+.todo-card-footer span.date {
+  color: firebrick;
+  font-size: 1rem;
+  font-weight: bold;
 }
